@@ -2,19 +2,20 @@
 	border-bottom: var(--primary-border);
 }
 
-.header__container,
 .header__list {
-	display: flex;
-	align-items: center;
+	display: none;
+
+	@media screen and (min-width: 1600px) {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
 }
 
 .header__container {
 	min-height: 80px;
-	justify-content: center;
-}
-
-.header__list {
-	gap: 50px;
+	display: flex;
+	align-items: center;
 }
 
 .header__link {
