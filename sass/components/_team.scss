@@ -1,5 +1,4 @@
 .team {
-	// @extend %section;
 	@include section;
 
 	background-color: var(--secondary-background-color);
