@@ -1,0 +1,35 @@
+.card-set {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--indent);
+}
+
+.card-set__item {
+	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+	position: relative;
+}
+
+.card-set__text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+
+.card-set__description {
+	display: flex;
+	width: 100%;
+	min-height: 70px;
+	align-items: center;
+	justify-content: center;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	background: rgba(47, 48, 58, 0.8);
+	color: var(--primary-white-color);
+}

@@ -1,0 +1,12 @@
+.works {
+	@include section(0, 94px);
+
+	// @extend %section;
+
+	// padding-top: 0;
+	// padding-bottom: 94px;
+}
+
+.works__title {
+	@include title;
+}

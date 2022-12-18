@@ -1,0 +1,37 @@
+.about {
+	// @extend %section;
+	@include section;
+}
+
+.about__wrap {
+	max-width: 270px;
+	min-height: 120px;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary-text-color);
+	background: var(--secondary-background-color);
+	border-radius: 4px;
+}
+
+.about__subtitle {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--navigation-text-color);
+}
+
+.about__description {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
+}
+
+.about .card-set__item {
+	--items: 4;
+}
