@@ -127,13 +127,17 @@ img {
 }
 
 .logo {
-  margin-right: 92px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 1600px) {
+  .logo {
+    margin-right: 92px;
+  }
 }
 
 .logo--background-light {
@@ -612,26 +616,35 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-flex {
-  --items: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1599px) {
   .footer-flex {
-    --items: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1600px) {
   .footer-flex {
-    --items: 6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 .footer__logo {
   display: block;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1599px) {
+  .address {
+    margin-bottom: 60px;
+  }
 }
 
 .address__wrap .address__item:last-child {
@@ -668,14 +681,23 @@ img {
   font-weight: 700;
 }
 
-.footer__connect {
-  margin-left: 70px;
-  padding-top: 12px;
+@media screen and (max-width: 1599px) {
+  .footer__connect {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .footer__connect {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 }
 
-.footer__subscribe {
-  margin-left: auto;
-  padding-top: 12px;
+@media screen and (min-width: 1600px) {
+  .footer__subscribe {
+    margin-left: auto;
+    padding-top: 12px;
+  }
 }
 
 .socials__link--color-dark {
@@ -683,22 +705,31 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1600px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .form__field {
-  min-width: 358px;
+  min-width: 450px;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  margin-right: 12px;
   color: var(--primary-white-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 1600px) {
+  .form__field {
+    min-width: 358px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+  }
 }
 
 .form__btn {
