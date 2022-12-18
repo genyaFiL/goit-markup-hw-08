@@ -4,6 +4,19 @@
 	padding-bottom: 60px;
 }
 
+.footer-flex {
+	--items: 2;
+
+	@media screen and (min-width: 768px) {
+		--items: 3;
+	}
+
+	@media screen and (min-width: 1600px) {
+		--items: 6;
+	}
+	display: flex;
+}
+
 .footer__logo {
 	display: block;
 	margin-bottom: 20px;
@@ -56,6 +69,10 @@
 .socials__link--color-dark {
 	color: var(--primary-white-color);
 	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form {
+	display: flex;
 }
 
 .form__field {

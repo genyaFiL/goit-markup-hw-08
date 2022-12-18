@@ -1,4 +1,15 @@
 .card-set {
+	// @media screen and (min-width: 768px) {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	gap: var(--indent);
+	// }
+	// @media screen and (max-width: 767px) {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	gap: 30px;
+	// }
+
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--indent);

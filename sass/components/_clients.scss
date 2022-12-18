@@ -4,17 +4,32 @@
 
 .clients__title {
 	@include title;
+	font-size: 28px;
+	line-height: 1.18;
+	@media screen and (min-width: 1600px) {
+		margin-bottom: 50px;
+		font-size: 36px;
+		line-height: 1.17;
+	}
 }
 
 .clients .card-set__item {
-	--items: 6;
+	--items: 2;
+
+	@media screen and (min-width: 768px) {
+		--items: 3;
+	}
+
+	@media screen and (min-width: 1600px) {
+		--items: 6;
+	}
 }
 
 .clients__link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	max-width: 170px;
+	max-width: 210px;
 	min-height: 92px;
 	border: 1px solid var(--primary-icon-color);
 	border-radius: 4px;
@@ -28,5 +43,13 @@
 	&:focus {
 		border-color: var(--accent-text-color);
 		color: var(--accent-text-color);
+	}
+
+	@media screen and (min-width: 768px) {
+		max-width: 292px;
+	}
+
+	@media screen and (min-width: 1600px) {
+		max-width: 170px;
 	}
 }
