@@ -153,8 +153,6 @@ img {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 @media screen and (min-width: 468px) {
   .container {
@@ -825,6 +823,9 @@ img {
     margin-right: 12px;
     margin-bottom: 20px;
   }
+}
+.form__field:focus {
+  outline: 1px solid var(--accent-text-color);
 }
 
 .form__btn {
