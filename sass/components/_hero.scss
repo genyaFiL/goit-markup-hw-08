@@ -5,7 +5,7 @@
 	min-height: 400px;
 	padding-top: 120px;
 
-	@media screen and (min-width: 1600px) {
+	@media screen and (min-width: 1200px) {
 		min-height: 600px;
 		padding-top: 200px;
 	}
@@ -65,7 +65,7 @@
 	text-transform: uppercase;
 	color: var(--primary-white-color);
 
-	@media screen and (min-width: 1600px) {
+	@media screen and (min-width: 1200px) {
 		max-width: 696px;
 		font-size: 44px;
 		line-height: 1.36;
