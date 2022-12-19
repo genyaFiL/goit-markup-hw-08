@@ -1,7 +1,7 @@
 .nav {
 	display: none;
 
-	@media screen and (min-width: 1600px) {
+	@media screen and (min-width: 768px) {
 		display: flex;
 		align-items: center;
 		margin-right: auto;
@@ -12,6 +12,11 @@
 	display: flex;
 	align-items: center;
 	gap: 50px;
+
+	@media screen and (min-width: 768px) and (max-width: 1599px) {
+		margin-left: 87px;
+		margin-right: 96px;
+	}
 
 	font-weight: 500;
 	font-size: 14px;
